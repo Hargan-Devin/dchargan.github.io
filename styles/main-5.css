@@ -9,7 +9,7 @@ body {
     font-size: 16px; 
     line-height: 32px;
     font-family: helvetica, arial, sans-serif; 
-    color: #000 ;
+    color: green;
     padding-bottom: 120px;
     margin-left: auto;
     margin-right: auto;
@@ -105,20 +105,20 @@ h3 {
 
 header, main, footer {
     max-width:  100%;
-    z-index:15;
+    z-index:12;
 }
 
 header, footer, footer a {
     position: fixed;
     text-align: center;
-    background-color: #ccffff;
+    background-color: #000667;
     color: whitesmoke;
 }
 
 .heading {
     margin-top: -10px;
-    font-size:  4rem /* (rem is a unit of measure) */;
-    color:  #000 ;
+    font-size: 20px;
+    color: #FFFF00;
     width: 100%;
     text-align: center;
     text-shadow: 2px 2px 3px #006666; 
@@ -183,14 +183,14 @@ table {
 }
 
 th, td {
-    border: 1px solid black;
+    border: 1px solid blue;
     text-align: center;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
 
 th { 
-    background: #a3a3a3; color: aliceblue; 
+    background: #a3a3a3; color: yellowgreen; 
 }
 
 tr:nth-child(even) {
