@@ -1,0 +1,58 @@
+@media only screen and (min-width: 32em ) { 
+    
+    #content-desktop {
+        display: block;
+        visibility: visible;
+        font-size: inherit;
+    }
+
+    #content-mobile {
+        display: none;
+        visibility: hidden;
+        font-size: 0;
+    }
+
+    
+    nav button { display:none; }  
+    
+    .navBar {
+        width: 100%;
+        display: block;
+        text-align: center;
+        background-color: #003c66;
+        color: #FFF;
+        position: fixed;
+        top: 85px;
+        left: 0;
+    }
+
+    .navBar a{
+        text-decoration: none;
+        color: #FFF;
+        padding: 7px;
+    }
+
+    .navBar a:hover{
+        background-color: #0068b3;
+    }
+    
+    .endSpace { 
+        display: block;
+        float: left;
+        text-align: justify;
+        background-color: inherit;
+        padding: 20px;
+        padding-bottom: 30px;
+    }
+    
+    .sidenav {
+        display: none;
+        visibility: hidden;
+        font-size: 0;
+    }
+    
+    body { 
+        padding-top: 90px; 
+        margin-top: 5px;
+    }
+}
