@@ -5,14 +5,7 @@
         visibility: visible;
         font-size: inherit;
     }
-
-    #content-mobile {
-        display: none;
-        visibility: hidden;
-        font-size: 0;
-    }
-
-    
+  
     nav button { display:none; }  
     
     .navBar {

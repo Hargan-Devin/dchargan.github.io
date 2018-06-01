@@ -73,8 +73,8 @@ aside {
     text-align: justify;
     background-color:#ffff;
     padding: 20px;
-    visibility: hidden;
-}
+} 
+
 
 section { 
     overflow: auto;
@@ -201,7 +201,12 @@ details {
     padding-top: 20px;
 }
 
+@media only screen and (m-width: 16em ) {
 #content-desktop {
-    visibility: hidden;
-}
+        display: none;
+        visibility: hidden;
+        font-size: 0;
+    }
+    }
+
 
