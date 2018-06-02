@@ -44,6 +44,19 @@
         font-size: 0;
     }
     
+    .storyAlt { 
+    display: block;
+    float: left;
+    text-align: justify;
+    background-color:#ffff;
+    padding: 20px;
+    visibility: visible;
+} 
+    
+    .rightImg {
+    width: 100%;
+    }
+    
     body { 
         padding-top: 90px; 
         margin-top: 5px;
