@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/hamburger.js"></script>
+        
         <script>
             function openNav() {
                 document.getElementById("mySidenav").style.width = "250px";
@@ -24,19 +25,21 @@
         </script>
     </head>
     <body>
-        
         <header class="headBack">
             <img src="images/sunny.jpg" class="headerImg" width="300" height="273" alt="Nice sunny day!">
             <h1 class="heading">Franklin</h1>
         </header>
         
-        <nav id=”menu” class="navBar">
-            <a href="">Home</a> 
-            <a href="">Franklin</a> 
-            <a href="">Greenville</a> 
-            <a href="">Springfield</a>
-            <a href="">Storm Center</a> 
-            <a href="">Gallery</a>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="hamburger" class="hide">
+                <li><a href="">Home</a></li> 
+                <li><a href="">Franklin</a></li> 
+                <li><a href="">Greenville</a></li>
+                <li><a href="">Springfield</a></li>
+                <li><a href="">Storm Center</a></li> 
+                <li><a href="">Gallery</a></li>
+            </ul>
         </nav>
 
         <main>
@@ -110,7 +113,10 @@
                 <article>
                     <h3>How's the Weather?</h3>
                     <aside>  
-                    <img src="images/franklin.jpeg" class="rightImg" alt="Franklin City">                                       
+                    <figure class ="myphoto">
+                    <img src="images/franklin.jpg" class="rightImg" size = "25vw" alt="Franklin City" 
+                    srcset="images/franklin-small.jpg 2w,             images/franklin-medium.jpg 4w, 
+                    images/franklin-large.jpg 8w">                   </figure>         
                     </aside>
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. 
@@ -131,11 +137,12 @@
             <section class="contact">
                 <p><b>How's the Weather?</b></p>
                 <p>332 Main St. Franklin, MU 33234 (02)<br>
-                    333-22-1132 HW@howstheweather.com<br>
+                    333-22-1132 HW@howstheweather.com<br></p>
+                    <div id="currentDate">
                     <script type="text/javascript">
-                    dateFunction();
+                        dateFunction()
                     </script>
-                </p>
+                    </div>
             </section>
         </footer>
     </body>
