@@ -1,6 +1,6 @@
 function computewindChill() {
     
-    var highNum = 90;
+    var highNum = ;
     var lowNum = 66;
     var s = 5;
     var t = (highNum + lowNum) / 2; 
