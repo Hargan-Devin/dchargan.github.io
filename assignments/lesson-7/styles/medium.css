@@ -68,11 +68,11 @@
     width: 67%;
     }
     
-    .img-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    .row {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
 }
-    
     
     body { 
         padding-top: 90px; 

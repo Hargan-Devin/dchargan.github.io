@@ -68,6 +68,11 @@
     width: 90%;
     }
     
+   .rowImg {
+    text-shadow: 2px 2px 4px red;
+    }
+}
+    
     body { 
         padding-top: 90px; 
         margin-top: 5px;
