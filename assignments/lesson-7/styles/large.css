@@ -59,7 +59,7 @@
     display: flex;
     float: left;
     text-align: justify;
-    background-color:#ffff;
+    background-color:#ffffff;
     padding: 20px;
     visibility: visible;
 } 
@@ -71,8 +71,7 @@
    .rowImg {
     text-shadow: 2px 2px 4px red;
     }
-}
-    
+  
     body { 
         padding-top: 90px; 
         margin-top: 5px;
