@@ -1,0 +1,82 @@
+@media only screen and (min-width: 32em ) { 
+    
+    #content-desktop {
+        visibility: visible;
+        font-size: inherit;
+    }
+    
+    nav button { display:none;}
+    
+    nav ul.hide {display: block;}
+    
+    nav ul {margin-left: 2%;}
+    
+    nav ul li {
+        float: left;
+    }
+    
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .8rem 1rem;
+    }
+    
+    .navBar {
+        width: 100%;
+        text-align: center;
+        background-color: #003c66;
+        color: #FFF;
+        position: fixed;
+        top: 85px;
+        left: 0;
+    }
+
+    .navBar a{
+        text-decoration: none;
+        color: #FFF;
+        padding: 7px;
+    }
+
+    .navBar a:hover{
+        background-color: #0068b3;
+    }
+    
+    .endSpace { 
+        float: left;
+        text-align: justify;
+        background-color: inherit;
+        padding: 20px;
+        padding-bottom: 30px;
+    }
+    
+    .sidenav {
+        display: none;
+        visibility: hidden;
+        font-size: 0;
+    }
+    
+    .storyAlt { 
+    display: flex;
+    float: left;
+    text-align: justify;
+    background-color:#ffffff;
+    padding: 20px;
+    visibility: visible;
+    }
+    
+    .rightImg {
+    width: 67%;
+    }
+    
+    .row {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+}
+    
+    body { 
+        padding-top: 90px; 
+        margin-top: 5px;
+    }
+    
+}
