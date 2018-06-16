@@ -55,25 +55,6 @@
         font-size: 0;
     }
     
-    .storyAlt { 
-    display: flex;
-    float: left;
-    text-align: justify;
-    background-color:#ffffff;
-    padding: 20px;
-    visibility: visible;
-    }
-    
-    .rightImg {
-    width: 67%;
-    }
-    
-    .row {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-}
-    
     body { 
         padding-top: 90px; 
         margin-top: 5px;
