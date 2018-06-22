@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Storm Center</title>
+        <meta name="description" content="Thank You!">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+                }
+        </script>
+    </head>
+    <body class="storm-center">
+        <header class="headBack">
+            <img src="images/sunny.jpg" class="headerImg" width="300" height="273" alt="Nice sunny day!">
+            <h1 class="heading">Storm Center</h1>
+        </header>
+        
+        <div class="Center-body">
+            <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="hamburger" class="hide">
+                    <li><a href="">Home</a></li> 
+                    <li><a href="franklin-7.html">Franklin</a></li> 
+                    <li><a href="">Greenville</a></li>
+                    <li><a href="">Springfield</a></li>
+                    <li><a href="storm-center.html">Storm Center</a></li> 
+                    <li><a href="gallery-7.html">Gallery</a></li>
+                </ul>
+            </nav>
+
+            <main>
+            
+                 <h1>Thank you for your time!</h1>
+            
+            </main>
+        </div>
+        <footer>  
+            <section class="contact">
+                <p><b>How's the Weather?</b></p>
+                <p>332 Main St. Franklin, MU 33234 (02)<br>
+                    333-22-1132 HW@howstheweather.com<br></p>
+                    <div id="currentDate">
+                    <script type="text/javascript">
+                        dateFunction()
+                    </script>
+                    </div>
+            </section>
+        </footer>
+    </body>
+</html>
