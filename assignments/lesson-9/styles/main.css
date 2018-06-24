@@ -52,6 +52,9 @@ main{
     height: 6em;
 }
 
+.cities {
+   float: left;
+}
 
 section { 
     overflow: auto;
@@ -173,7 +176,8 @@ nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
 nav ul.hide {display: none;}
 
 #main {
-    transition: margin-left .5s;
+    position: fixed;
+    transition: margin-left 1.0s;
     padding-top: 20px;
 }
 

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Index</title>
+        <title>Home Page</title>
         <meta name="description" content="Home Page">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/main.css">
@@ -35,7 +35,7 @@
             <nav class="clearfix">
                 <button onclick="toggleMenu()">&#9776;</button>
                 <ul id="hamburger" class="hide">
-                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="homepage.html">Home</a></li> 
                     <li><a href="franklin.html">Franklin</a></li> 
                     <li><a href="">Greenville</a></li>
                     <li><a href="">Springfield</a></li>
@@ -45,66 +45,36 @@
             </nav>
 
             <main>
-    
-
+                <p id="cities"></p>
                 <script>
-                    var header = document.querySelector('header');
-                    var section = document.querySelector('section');
-                    var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json'
-                    var request = new XMLHttpRequest();
-                    request.open('GET', requestURL);
-                    request.responseType = 'json';
-                    request.send();
-                    request.onload = function() {
-                        var superHeroes= request.response;
-                        populateHeader(superHeroes);
-                        showHeroes(superHeroes);
+                    var city1 = { "name":"Franklin", "motto":"Where you will grow!", "yearFounded":1788, "currentPopulation": 30458, "averageRainfall": 21};
+                    for (x in city1)    {document.getElementById("cities").innerHTML += x + ":" + " " + city1[x] + "<br>";
                     }
-        
-                    function populateHeader(jsonObj) {
-                        var myH1 = document.createElement('h1');
-                        myH1.textContent = jsonObj['squadName'];
-                        header.appendChild(myH1);
-        
-                        var myPara = document.createElement('p');
-                        myPara.textContent = 'Hometown' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+                    
+                    var city2 = { "name":"Greenville", "motto":"Green is our way of life.", "yearFounded":1805, "currentPopulation": 33458, "averageRainfall": 25};
+                    for (x in city2) {  document.getElementById("cities").innerHTML += x + ":" + " " + city2[x] + "<br>";
                     }
-        
-                    function showHeroes(jsonObj) {
-                        var heroes = jsonObj['members'];
-      
-                        for (var i = 0; i < heroes.length; i++) {
-                            var myArticle = document.createElement('article');
-                            var myH2 = document.createElement('h2');
-                            var myPara1 = document.createElement('p');
-                            var myPara2 = document.createElement('p');
-                            var myPara3 = document.createElement('p');
-                            var myList = document.createElement('ul');
-
-                            myH2.textContent = heroes[i].name;
-                            myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
-                            myPara2.textContent = 'Age: ' + heroes[i].age;
-                            myPara3.textContent = 'Superpowers:';
-        
-                            var superPowers = heroes[i].powers;
-                            for (var j = 0; j < superPowers.length; j++) {
-                                var listItem = document.createElement('li');
-                                listItem.textContent = superPowers[j];
-                                myList.appendChild(listItem);
-                            }
-
-                            myArticle.appendChild(myH2);
-                            myArticle.appendChild(myPara1);
-                            myArticle.appendChild(myPara2);
-                            myArticle.appendChild(myPara3);
-                            myArticle.appendChild(myList);
-
-                            section.appendChild(myArticle);
-                        }
+                    
+                    var city3 = { "name":"Springfield", "motto":"Where everyone is lifted.", "yearFounded":1826, "currentPopulation": 17852, "averageRainfall": 17};
+                    for (x in city3){document.getElementById("cities").innerHTML += x +":" + " " + city3[x] + "<br>";
                     }
-    
+                </script>  
+                
+                
+                <ul>
+                    <li>The current temperature in Franklin is <span id="currentTemp"></span>&deg; F</li>
+                    <li>The current weather in Franklin is <span id="currentWeather"></span></li>
+                    <li>The high temperature in Franklin is <span id="highTemp"></span>&deg; F</li>
+                    <li>The low temperature in Franklin is <span id="lowTemp"></span>&deg; F</li>
+                    <li>The wind speed in Franklin is <span id="windSpeed"></span>mph</li>
+                    <li><span id="icon"><img src="http://openweathermap.org/img/w/01n.png">
+                        </span></li>
+                </ul>
+                <script src="scripts/weather.js">
+                
                 </script>
-  
+                
+
             </main>
         </div>
         <footer>  
