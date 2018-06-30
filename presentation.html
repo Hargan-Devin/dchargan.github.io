@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <title>Devin Hargan's Presentation</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+         <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("p").toggleClass("important yellow");
+                })
+            })
+            </script>
+        <style>
+            .important {
+                font-weight: bold;
+            }
+            .yellow {
+                color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <p>This is a JQuery example</p>
+            <button>JQuery</button>
+        </main>
+    </body>
+</html>

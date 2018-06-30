@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home Page</title>
+        <meta name="description" content="Home Page">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+                }
+        </script>
+    </head>
+    
+    <body class="index">
+        <header class="headBack">
+            <img src="images/sunny.jpg" class="headerImg" width="300" height="273" alt="Nice sunny day!">
+            <h1 class="heading">How's the Weather?</h1>
+        </header>
+        
+        <div class="Center-body">
+            <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="hamburger" class="hide">
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="franklin.html">Franklin</a></li> 
+                    <li><a href="greenville.html">Greenville</a></li>
+                    <li><a href="springfield.html">Springfield</a></li>
+                    <li><a href="storm-center.html">Storm Center</a></li> 
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <div id="cities">
+                <script>
+                    var city1 = { "name":"Franklin", "motto":"Where you will grow!", "yearFounded":1788, "currentPopulation": 30458, "averageRainfall": 21};
+                    for (x in city1)    {document.getElementById("cities").innerHTML += x + ":" + " " + city1[x] + "<br>";
+                    }
+                    
+                    var city2 = { "name":"Greenville", "motto":"Green is our way of life.", "yearFounded":1805, "currentPopulation": 33458, "averageRainfall": 25};
+                    for (x in city2) {  document.getElementById("cities").innerHTML += x + ":" + " " + city2[x] + "<br>";
+                    }
+                    
+                    var city3 = { "name":"Springfield", "motto":"Where everyone is lifted.", "yearFounded":1826, "currentPopulation": 17852, "averageRainfall": 17};
+                    for (x in city3){document.getElementById("cities").innerHTML += x +":" + " " + city3[x] + "<br>";
+                    }
+                </script>  
+                </div>
+                <ul>
+                    <li>The current temperature in Franklin is <span id="currentTemp"></span>&deg; F</li>
+                    <li>The current weather in Franklin is <span id="currentWeather"></span></li>
+                    <li>The high temperature in Franklin is <span id="highTemp"></span>&deg; F</li>
+                    <li>The low temperature in Franklin is <span id="lowTemp"></span>&deg; F</li>
+                    <li>The wind speed in Franklin is <span id="windSpeed"></span>mph</li>
+                    <li><span id="icon"><img src="http://openweathermap.org/img/w/01n.png" alt="Night">
+                        </span></li>
+                </ul>
+                <script src="scripts/weather.js">
+                
+                </script>
+                
+
+            </main>
+        </div>
+        <footer>  
+            <section class="contact">
+                <p><b>How's the Weather?</b></p>
+                <p>332 Main St. Franklin, MU 33234 (02)<br>
+                    333-22-1132 HW@howstheweather.com<br></p>
+                    <div id="currentDate">
+                    <script type="text/javascript">
+                        dateFunction()
+                    </script>
+                    </div>
+            </section>
+        </footer>
+    </body>
+</html>
