@@ -3,31 +3,32 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Home Page</title>
-        <meta name="description" content="Home Page">
+        <title>How's the Weather</title>
+        <meta name="description" content="How's the weather?">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/large.css">
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/hamburger.js"></script>
+        <script src="scripts/windchill.js"></script>
         
         <script>
             function openNav() {
                 document.getElementById("mySidenav").style.width = "250px";
                 document.getElementById("main").style.marginLeft = "250px";
-                }
+            }
             function closeNav() {
                 document.getElementById("mySidenav").style.width = "0";
                 document.getElementById("main").style.marginLeft = "0";
-                }
+            }
         </script>
     </head>
     
     <body class="index">
         <header class="headBack">
             <img src="images/sunny.jpg" class="headerImg" width="300" height="273" alt="Nice sunny day!">
-            <h1 class="heading">How's the Weather?</h1>
+            <h1 class="heading">Greenville</h1>
         </header>
         
         <div class="Center-body">
@@ -87,24 +88,6 @@
                     </div>
             </section>
         </footer>
-        <script>
-        var urlString = document.location.href;
-        var urlArray = urlString.split('/');
-        var pageHREF = urlArray[urlArray.length-1];
-    
-        if (pageHREF ! == "") {
-        var menu= document.querySelectorAll('ul#hamburger li a');
-        var i;
-        for(i=0; i < menu.length; i++) {
-            var currentURL = (menu[i].getAttribute("href"));
-            menu[i].parentNode.className="";
-            if (currentURL=-pageHREF) {
-                menu[i].parentNode.className="active";
-                }
-            }
-    
-    } 
-        </script>
     </body>
     
     

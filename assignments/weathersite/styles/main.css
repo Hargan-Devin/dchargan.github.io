@@ -166,10 +166,12 @@ nav ul.hide {
 	padding-top: 20px;
 }
 
-.myphoto {
+.rightImg {
     display: flex;
+    vertical-align: middle;
     float: right;
-    size: 10%
+    width: 33%;
+    height: auto;
     
 }
 form legend {
