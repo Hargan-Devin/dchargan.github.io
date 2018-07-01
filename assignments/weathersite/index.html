@@ -34,7 +34,7 @@
             <nav class="clearfix">
                 <button onclick="toggleMenu()">&#9776;</button>
                 <ul id="hamburger" class="hide">
-                    <li><a href="index.html">Home</a></li> 
+                    <li class="active"><a href="index.html">Home</a></li> 
                     <li><a href="franklin.html">Franklin</a></li> 
                     <li><a href="greenville.html">Greenville</a></li>
                     <li><a href="springfield.html">Springfield</a></li>
@@ -87,5 +87,25 @@
                     </div>
             </section>
         </footer>
+        <script>
+        var urlString = document.location.href;
+        var urlArray = urlString.split('/');
+        var pageHREF = urlArray[urlArray.length-1];
+    
+        if (pageHREF ! == "") {
+        var menu= document.querySelectorAll('ul#hamburger li a');
+        var i;
+        for(i=0; i < menu.length; i++) {
+            var currentURL = (menu[i].getAttribute("href"));
+            menu[i].parentNode.className="";
+            if (currentURL=-pageHREF) {
+                menu[i].parentNode.className="active";
+                }
+            }
+    
+    } 
+        </script>
     </body>
+    
+    
 </html>

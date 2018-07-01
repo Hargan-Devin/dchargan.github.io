@@ -9,9 +9,35 @@
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/large.css">
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+     <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+                }
+        </script>
     </head>
-    <body>
-    <a href="franklin-7.html">Franklin</a>
+    <body class="gallery">
+        <header class="headBack">
+            <img src="images/sunny.jpg" class="headerImg" width="300" height="273" alt="Nice sunny day!">
+            <h1 class="heading">Storm Center</h1>
+        </header>
+    <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="hamburger" class="hide">
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="franklin.html">Franklin</a></li> 
+                    <li><a href="greenville.html">Greenville</a></li>
+                    <li><a href="springfield.html">Springfield</a></li>
+                    <li><a href="storm-center.html">Storm Center</a></li> 
+                    <li class="active"><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
         <div class="img-gallery">
             <div class="row">
             <figure>   
