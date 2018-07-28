@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Mountain Spoke</title>
+        <meta name="description" content="The Mountain Spoke">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <script src="scripts/accordion.js"></script>
+    </head>
+    <body>
+        <img src="images/logo.png"><br>
+        
+        <button class="accordion" onclick="toggleMenu()">Table of Contents</button>
+        <div class="panel">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="adventure-tours.html">Adventure Tours</a></li>
+            <li><a href="event.html">Event Registration</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <h1>Event Registration</h1>
+        <form method="get">
+                    <fieldset>
+                        <legend><h3>Personal Information</h3></legend>
+                        <label>Full Name* <input type="text" name="name" required pattern="[A-Za-z].{5,}"></label><br>
+                        <label>E-mail <input type="email" name="email" placeholder="mymail@gmail.com"></label><br>
+                        <label>Phone Number* <input type="tel" name="phone" required></label><br>
+                        <label>Zip Code* <input type="number" name="zip" required></label><br>
+                        <label>Home State or Country <input type="text" name="home"></label><br>
+                        <label>Special Accomodations/comments <input type="text" name="comments"></label><br>
+                    </fieldset>
+                    <input type="submit" value="Submit">   
+                </form>
+        <footer>  
+            <h6>Check out <a href="resources.html">our resources.</a>
+            For an overview of The Mountain Spoke, check out <a href="video.html">this video.</a></h6>
+        </footer>
+    </body>
